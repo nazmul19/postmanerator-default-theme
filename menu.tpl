@@ -20,7 +20,7 @@
         </li>
         {{ range .Requests }}
         <li>
-            <a href="#request-{{ slugify .Name }}">{{ .Name }}</a>
+            <a href="#request-{{ slugify .Name }}"><span class="req-{{ .Method }} text-lg">{{ .Method }}</span>{{ .Name }}</a>
         </li>
         {{ end }}
         {{ range .Folders }}
