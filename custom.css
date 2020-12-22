@@ -125,3 +125,18 @@ pre code {
     position: absolute;
     padding: 15px 15px 15px 250px;
 }
+
+.req-GET {
+  color: #3eb63e; }
+
+.req-POST {
+  color: #f5a623; }
+
+.req-PATCH {
+  color: #666666; }
+
+.req-PUT {
+  color: #4a90e2; }
+
+.req-DELETE {
+  color: #ed4b48; }
