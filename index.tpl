@@ -75,6 +75,17 @@
                         {{ $req.Name }}
                         <a href="#request-{{ slugify $req.Name }}"><i class="glyphicon glyphicon-link"></i></a>
                     </h3>
+                    
+                    <table class="table table-bordered">
+                    {{ range $req.PayloadParams }}
+                        <tr>
+                            <th>{{ .Name }}</th>
+                            <td>{{ .Key }}</td>
+                            <td>{{ .Description }}</td>
+                        </tr>
+                    {{ end }}
+                    </table>
+                    
                     <div style="padding-bottom: 20px;padding-top: 20px;"><span class="req-{{ $req.Method }} text-lg">{{ $req.Method }}</span> <span class="bg-info" style="margin-left: 5px;padding: 5px;">{{ $req.URL }}</span></div>
                     <div>{{ markdown $req.Description }}</div>
 
