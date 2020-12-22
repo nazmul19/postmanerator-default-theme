@@ -140,4 +140,4 @@ pre code {
 
 .req-DELETE {
   color: #ed4b48; }
-.text-lg { font-weight: bold; }
+.text-lg { font-weight: bold; display: inline-block; width: 56px; }
