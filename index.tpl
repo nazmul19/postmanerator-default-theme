@@ -77,11 +77,9 @@
                     </h3>
                     
                     <table class="table table-bordered">
-                    {{ range $req.PayloadParams }}
+                    {{ range [{'Name': 'Test'}] }}
                         <tr>
                             <th>{{ .Name }}</th>
-                            <td>{{ .Key }}</td>
-                            <td>{{ .Description }}</td>
                         </tr>
                     {{ end }}
                     </table>
