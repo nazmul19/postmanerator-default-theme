@@ -76,13 +76,7 @@
                         <a href="#request-{{ slugify $req.Name }}"><i class="glyphicon glyphicon-link"></i></a>
                     </h3>
                     
-                    <table class="table table-bordered">
-                    {{ range [{'Name': 'Test'}] }}
-                        <tr>
-                            <th>{{ .Name }}</th>
-                        </tr>
-                    {{ end }}
-                    </table>
+                    <h2> fmt.Printf("%v", $req.PayloadParams) </h2>
                     
                     <div style="padding-bottom: 20px;padding-top: 20px;"><span class="req-{{ $req.Method }} text-lg">{{ $req.Method }}</span> <span class="bg-info" style="margin-left: 5px;padding: 5px;">{{ $req.URL }}</span></div>
                     <div>{{ markdown $req.Description }}</div>
