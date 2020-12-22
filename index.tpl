@@ -75,7 +75,7 @@
                         {{ $req.Name }}
                         <a href="#request-{{ slugify $req.Name }}"><i class="glyphicon glyphicon-link"></i></a>
                     </h3>
-
+                    <div><span class="req-{{ $req.Method }} text-lg">{{ $req.Method }}</span> {{ $req.URL }}</div>
                     <div>{{ markdown $req.Description }}</div>
 
                     <div>
