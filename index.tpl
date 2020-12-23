@@ -62,10 +62,7 @@
 
                 {{ end }}
 
-                <h2 id="doc-api-detail">
-                    API detail
-                    <a href="#doc-api-detail"><i class="glyphicon glyphicon-link"></i></a>
-                </h2>
+                
 
                 {{ range .Requests }}
                 {{ $req := . }}
