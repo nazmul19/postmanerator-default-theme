@@ -15,9 +15,7 @@
             </ul>
         </li>
         {{ end }}
-        <li>
-            <a href="#doc-api-detail">API detail</a>
-        </li>
+       
         {{ range .Requests }}
         <li>
             <a href="#request-{{ slugify .Name }}"><span class="req-{{ .Method }} text-lg">{{ .Method }}</span> {{ .Name }}</a>
