@@ -1,8 +1,5 @@
 <div class="scrollspy">
     <ul id="main-menu" data-spy="affix" class="nav">
-        <li>
-            <a href="#doc-general-notes">General notes</a>
-        </li>
         {{ with $structures := .Structures }}
         <li>
             <a href="#doc-api-structures">API structures</a>
