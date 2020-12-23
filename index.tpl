@@ -26,11 +26,6 @@
             <div class="col-lg-12">
                 <h1>{{ .Name }}</h1>
 
-                <h2 id="doc-general-notes">
-                    General notes
-                    <a href="#doc-general-notes"><i class="glyphicon glyphicon-link"></i></a>
-                </h2>
-
                 {{ markdown .Description }}
 
                 {{ with $structures := .Structures }}
